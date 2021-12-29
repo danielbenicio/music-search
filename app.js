@@ -5,10 +5,20 @@ const prevAndNextContainer = document.querySelector('#prev-and-next-container')
 
 const urlAPI = `https://api.lyrics.ovh`
 
+const insertSongsInPage = songsInfo => {
+  songsContainer.innerHTML = songsInfo.data.map(song => `
+    <li class="song">
+      <span class="song-artist"><strong>${song.artist.name}</strong> - ${song.title}</span>
+      <button class="btn" data-artist="${song.artist.name}" data-song-title="${song.title}">Ver letra</button>
+    </li>
+  `).join('')
+}
+
 const fetchSongs = async term => {
   const response = await fetch(`${urlAPI}/suggest/${term}`)
   const data =  await response.json()
-  console.log(data)
+  
+  insertSongsInPage(data)
 
   // fetch(`${urlAPI}/suggest/${term}`)
   //   .then(response => response.json())
