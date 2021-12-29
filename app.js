@@ -12,6 +12,16 @@ const insertSongsInPage = songsInfo => {
       <button class="btn" data-artist="${song.artist.name}" data-song-title="${song.title}">Ver letra</button>
     </li>
   `).join('')
+
+  if(songsInfo.prev || songsInfo.next) {
+    prevAndNextContainer.innerHTML = `
+      ${songsInfo.prev ? `<button class="btn" onClick="getMoreSongs('${songsInfo.prev}')">Anteriores</button>` : ''}
+      ${songsInfo.next ? `<button class="btn" onClick="getMoreSongs('${songsInfo.next}')">Próximas</button>` : ''}
+      `
+      return
+  }
+
+  prevAndNextContainer.innerHTML = ''
 }
 
 const fetchSongs = async term => {
