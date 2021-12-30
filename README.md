@@ -11,7 +11,7 @@
 
 <h3>Como a aplicação foi desenvolvida?</h3>
    
-<p> A aplicação foi desenvolvida inteiramente com HTML, CSS e Javascript.</p> 
+<p> A aplicação foi desenvolvida inteiramente com HTML, CSS e JavaScript.</p> 
 
 <hr>
 
