@@ -3,7 +3,13 @@
 *:before {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  font-size:62.5%;
 }
 
 li {
@@ -11,8 +17,8 @@ li {
 }
 
 body {
-  background-color: #10161B;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #4357AD;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
@@ -30,35 +36,24 @@ button:focus {
 }
 
 header {
-  background-image: url('https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  color: #fff;
+  background-color: #5FB2DE;
+  height: 40.2rem;
+}
+
+.header-content{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 100px 0;
-  position: relative;
+  margin-left: 8rem;
+  margin-top: -8rem;
 }
 
-header::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, .4);
+.header-content .logo {
+  margin-left: 55px;
+  margin-bottom: 3rem;
 }
 
-header * {
-  z-index: 1;
-}
-
-header h1 {
-  margin: 0 0 30px;
+.header-content .bg-img{
+  margin-top: 3.1rem;
 }
 
 form {
@@ -101,7 +96,7 @@ form button {
   margin: 30px auto;
   max-width: 100%;
   width: 500px;
-  background-color: #10161B;
+  background-color: #4357AD;
 }
 
 .song {
@@ -132,8 +127,9 @@ form button {
 
 .song-artist {
   color: white;
-  opacity: .4;
+  opacity: .6;
   max-width: 400px;
+  font-size: 1.6rem;
 }
 
 .lyrics-container {
@@ -144,4 +140,5 @@ form button {
 .lyrics {
   margin-top: 20px;
   line-height: 1.5;
+  font-size: 1.6rem;
 }

@@ -2,30 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+  
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
   <title>Lyrics Search</title>
-  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
-    <h1>Busca letras</h1>
-
-    <form id="form">
-      <input
-        autofocus
-        value="Led Zeppelin"
-        id="search"
-        type="text"
-        placeholder="Insira o nome do artista ou da música..."
-      />
-
-      <button>Buscar</button>
-    </form>
+    <div class="header-content">
+      <div class="search">
+        <img class="logo" src="/images/logo.svg" alt="">
+        <form id="form">
+          <input
+            autofocus
+            value="Led Zeppelin"
+            id="search"
+            type="text"
+            placeholder="Insira o nome do artista ou da música..."
+          />
+          <button>Buscar</button>
+        </form>
+      </div>
+      <img class="bg-img" src="/images/mc-kevin1.png" alt="">
+    </div>
   </header>
 
   <ul id="songs-container" class="songs-container songs"></ul>
 
   <div id="prev-and-next-container" class="prev-and-next-container"></div>
 
-  <script src="./app.js"></script>
+  <script src="/scripts/app.js"></script>
 </body>
 </html>

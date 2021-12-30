@@ -21,4 +21,9 @@ fetchsongs(searchTerm) para que o fetchsongs receba o que você escreveu
 
 11- criar eventListener para ver se clicou no botão ver letra
 
-12 - criar promisse para pegar letra da API
+12 - criar promisse para pegar letra da API e colocar a letra no html
+
+13 - fazer todo html sumir quando clicar em ver letra
+
+14 - formatar letra com .replace
+
