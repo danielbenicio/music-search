@@ -16,3 +16,9 @@ fetchsongs(searchTerm) para que o fetchsongs receba o que você escreveu
 8 - criar função que irá inserir os sons no html, ultilizar o map para transformar o array em uma string de <li>
 
 9 - criar if para verificar se será necessários o botão próximo ou não
+
+10 - criar função para as próximas músicas, ultilizar HEROKU para contornar erro CORS
+
+11- criar eventListener para ver se clicou no botão ver letra
+
+12 - criar promisse para pegar letra da API
