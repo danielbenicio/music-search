@@ -5,9 +5,13 @@ const prevAndNextContainer = document.querySelector('#prev-and-next-container')
 
 const urlAPI = `https://api.lyrics.ovh`
 
+const fetchData = async url => {
+  const response = await fetch(url)
+  return await response.json()
+}
+
 const getMoreSongs = async url => {
-  const response = await fetch(`https://cors-anywhere.herokuapp.com/${url}`)
-  const data = await response.json()
+  const data = await fetchData(`https://cors-anywhere.herokuapp.com/${url}`)
   insertSongsInPage(data)
 }
 
@@ -30,9 +34,9 @@ const insertSongsInPage = songsInfo => {
   prevAndNextContainer.innerHTML = ''
 }
 
+
 const fetchSongs = async term => {
-  const response = await fetch(`${urlAPI}/suggest/${term}`)
-  const data =  await response.json()
+  const data =  await fetchData(`${urlAPI}/suggest/${term}`)
   
   insertSongsInPage(data)
 
@@ -58,8 +62,7 @@ form.addEventListener('submit', event => {
 })
 
 const fetchLyrics = async (artist, songTitle) => {
-  const response = await fetch(`${urlAPI}/v1/${artist}/${songTitle}`)
-  const data =  await response.json()
+  const data =  await fetchData(`${urlAPI}/v1/${artist}/${songTitle}`)
   const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, '<br>')
   
   songsContainer.innerHTML = `

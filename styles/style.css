@@ -121,8 +121,18 @@ form button {
 }
 
 .warning-message {
+  height: 5rem;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  opacity: .9;
   color: #EA2234;
   text-align: center;
+  font-size: 1.6rem;
 }
 
 .song-artist {
