@@ -1,0 +1,29 @@
+1 - armazenar url https://api.lyrics.ovh
+2 - armazenar o form e input  e container de musicas e container de butoes em variável
+
+3 - criar função que faz não recarregar a pagina quando clicar em enviar e pega o valor digitado pelo usuário, evitar que o usuario não digite nada, return.
+
+fetchsongs(searchTerm) para que o fetchsongs receba o que você escreveu
+
+4 -  criar váriavel com parametro term com a requisição das letras das musicas da API.
+
+5 - criar then dentro da variavel e transformar o response em json, criar outro then com data que seriam os dados
+
+6- refatorar para async await
+
+7 - implementar os dados da Data na pagina
+
+8 - criar função que irá inserir os sons no html, ultilizar o map para transformar o array em uma string de <li>
+
+9 - criar if para verificar se será necessários o botão próximo ou não
+
+10 - criar função para as próximas músicas, ultilizar HEROKU para contornar erro CORS
+
+11- criar eventListener para ver se clicou no botão ver letra
+
+12 - criar promisse para pegar letra da API e colocar a letra no html
+
+13 - fazer todo html sumir quando clicar em ver letra
+
+14 - formatar letra com .replace
+

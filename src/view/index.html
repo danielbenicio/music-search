@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+  
+  <link rel="stylesheet" href="../../public/styles/style.css">
+  <link rel="shortcut icon" href="../../public/images/favicon.ico" type="image/x-icon">
+  <title>Music Search</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="search">
+        <img class="logo" src="../../public/images/logo.svg" alt="">
+        <form id="form">
+          <input
+            autofocus
+            value="Led Zeppelin"
+            id="search"
+            type="text"
+            placeholder="Insira o nome do artista ou da música..."
+          />
+          <button>Buscar</button>
+        </form>
+      </div>
+      <img class="bg-img" src="../../public/images/mc-kevin1-removebg.png" alt="">
+    </div>
+  </header>
+
+  <ul id="songs-container" class="songs-container songs"></ul>
+
+  <div id="prev-and-next-container" class="prev-and-next-container"></div>
+
+  <script src="../../public/scripts/app.js"></script>
+</body>
+</html>
