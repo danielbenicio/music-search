@@ -53,7 +53,7 @@ form.addEventListener('submit', event => {
 
   const searchTerm = searchInput.value.trim()//trim serve para ignorar os epaços digitados na barra de pesquisa
   
-  if(searchTerm == ''){
+  if(!searchTerm){
     songsContainer.innerHTML  = `<li class="warning-message">Por favor, digite um termo válido!</li>`
     return // irá ignorar todo cósigo abaixo
   }
